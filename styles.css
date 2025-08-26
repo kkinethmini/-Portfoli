@@ -270,3 +270,155 @@ img {
   color: #cbd5e1;
 
 }
+
+
+
+/*  
+   Contact Section Styles
+ */
+#contact {
+  padding: 80px 20px; /* More spacing */
+  background: #0b1220;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0,
+  0, 0.2);
+  max-width: 900px;
+  margin: 0 auto 3rem;
+
+}
+
+/* Decorative shapes */
+#contact::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(59, 130, 246, 0.2);
+  border-radius: 50%;
+  z-index: 0;
+  animation: float 6s ease-in-out infinite;
+
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+
+}
+
+ 
+ /* Card container */
+#contact .card {
+
+  color: #ffffff; /* Text color */
+  border-radius: 25px; /* Rounded corners */
+  padding: 50px 40px; /* Space inside the card */
+  max-width: 700px; /* Limit card width */
+  margin: auto; /* Center horizontally */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+  position: relative; /* For layering */
+  z-index: 1; /* Above decorative shapes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-align: center; /* Center text */
+  gap: 2rem; /* Space between elements */
+  font-family: "Poppins", sans-serif; /* Font */
+
+}
+
+/* Card hover effect */
+#contact .card:hover {
+  transform: translateY(-10px); /* Lift up on hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+
+}
+
+/* Heading */
+#contact .card h2 {
+  font-size: 2rem; /* Heading size */
+  margin-bottom: 1.5rem; /* Space below heading */
+  text-align: center; /* Centered heading */
+  font-weight: 700; /* Bold */
+  color: #e0f760; /* White text */
+  letter-spacing: 1px; /* Spacing between letters */
+   
+
+}
+
+/* Contact info paragraph */
+#contact .contact-info p {
+  font-size: 1.1rem; /* Paragraph size */
+  color: #d4fd5b; /* Light text color */
+  line-height: 1.6; /* Space between lines */
+  margin-bottom: 0.5rem; /* Space below paragraph */
+  text-align: center; /* Center text */
+  max-width: 600px; /* Limit width */
+  font-family: "Poppins", sans-serif; /* Font */
+  font-weight: 500; /* Medium weight */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+
+}
+
+/* Contact links container */
+#contact .contact-links {
+  
+  display: flex; /* Horizontal layout */
+  flex-direction: column; /* Wrap on small screens */
+  justify-content: center; /* Center links */
+  margin-top: 1rem; /* Space above links */
+  width: 100%; /* Full width */
+  max-width: 500px; /* Limit width */
+  font-family: "Poppins", sans-serif; /* Font */
+  font-weight: 500; /* Medium weight */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+  text-shadow: 0 1px 3px rgba(194, 131, 219, 0.769); /* Subtle shadow */
+  text-align: center; /* Center links */
+
+}
+
+/* Each link style */
+#contact .contact-links a {
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Link font size */
+  background: rgb(124, 104, 203); /* Transparent background */
+  padding: 0.6rem 1rem; /* Space inside link */
+  border-radius: 10px; /* Rounded link */
+  transition: background 0.3s ease, transform 0.3s ease; /* Hover animation */
+  display: inline-block; /* Inline block for padding */
+  min-width: 120px; /* Minimum width */
+  text-align: center; /* Center text */
+  font-family: "Poppins", sans-serif; /* Font */
+  font-weight: 600; /* Semi-bold */
+  box-shadow: 0 4px 12px rgba(0, 0,
+  0, 0.2); /* Subtle shadow */
+
+}
+
+/* Link hover effect */
+#contact .contact-links a:hover {
+  background: rgba(255, 255, 255, 0.25); /* Slightly stronger background */
+  transform: translateY(-3px); /* Lift link on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+
+}
+
+/* Location text */
+#contact .contact-info p:last-child {
+  margin-top: 2rem; /* Space above location */
+  color: #def44e; /* Muted color */
+  text-align: center; /* Centered */
+  font-size: 0.95rem; /* Slightly smaller text */
+  
+}
+
+
+
