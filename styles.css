@@ -176,3 +176,40 @@ header {
   transform: translateY(-8px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
+
+Button */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #38bdf8; /* teal-blue */
+  color: #0f172a;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+  color: #f8fafc;
+  transform: scale(1.05);
+}
+.tag {
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 1px solid #1f2937;
+  border-radius: 999px;
+  color: var(--muted);
+}
+
+footer {
+  border-top: 1px solid #1f2937;
+  padding: 24px 20px;
+  margin-top: 32px;
+  color: var(--muted);
+}
+
+img {
+  max-width: 100%;
+  border-radius: 14px;
+}
